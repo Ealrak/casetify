@@ -44,15 +44,14 @@ main .page1 .page1_header .header_right {
 }
 main .page1 .page1_header .header_right a {}
 main .page1 .page1_header .header_right a img {}
-main .page2 {
-    background-color:#f5f5f5;
-}
+main .page2 {}
 main .page2 .category {
     display:flex; flex-flow:row nowrap; justify-content: space-between;
-    padding:13.5px 130px; background-color:#fff;
+    padding:13.5px 130px; background-color:#fff; background-color:#f5f5f5;
 }
 main .page2 .category .cate {
     display:flex; flex-flow:column nowrap; text-align: center; gap:10px; padding:10px;
+    background-color:#fff;
 }
 main .page2 .category .cate img {
     width:200px; height:170px;
@@ -63,22 +62,45 @@ main .page3 {
 }
 main .page3 .page3_top {
     padding:100px 0;
+    display:flex; flex-flow:column nowrap; gap:20px;
 }
 main .page3 .page3_top h1 {
     font-size:3.125rem; font-weight:700;
 }
 main .page3 .page3_top .page3_detail {
-    width:1618px; text-align:right;
+    width:1618px; display:flex; flex-flow:row nowrap; gap:7px;
+    margin:0 auto; justify-content: end;
 }
-main .page3 .page3_top .page3_detail a{}
+main .page3 .page3_top .page3_detail a{
+    border:1px solid rgba(0,0,0,0.2);
+    padding:10px 20px; border-radius:15px;
+}
 main .page3 .page3_top .page3_cate {
-    background-color:#2C5DAB; padding:20px 30px;
-    margin:20px auto; width:1462px; border-radius:15px;
+    width:1620px; background-color:#2C5DAB;
+    margin:0 auto;
+    display:flex; flex-flow: row nowrap; gap:20px;
+    justify-content:center; padding:20px 30px; border-radius: 15px;
 }
 main .page3 .page3_top .page3_cate a {
-    color:#fff; margin-right:20px;
+    padding:5px 10px; border-radius:15px;
 }
-main .page3 .page3_top .page3_cate a:last-child {margin-right:0;}
-main .page3 .page3_top .page3_cate a em{
-    font-size:0.875rem; font-weight: 700; color:#fff;
+main .page3 .page3_top .page3_cate a:hover {
+    background-color:#F6E163;
+}
+main .page3 .page3_top .page3_cate a:hover span {color:#000; font-weight:500;}
+main .page3 .page3_top .page3_cate a:hover em {color:#000;}
+main .page3 .page3_top .page3_cate a:last-child {
+    border:none;
+}
+main .page3 .page3_top .page3_cate a:last-child:hover {
+    background-color:#2C5DAB;
+}
+main .page3 .page3_top .page3_cate a em {
+    color:#fff; font-weight:700;
+}
+main .page3 .page3_top .page3_cate a span {
+    color:#fff;
+}
+main .page3 .page3_top .page3_cate a img {
+    
 }
